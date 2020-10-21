@@ -1,0 +1,889 @@
+# 编译完的class文件的路径
+Classfile /Users/cc/Demo.class
+
+# 字节码文件最后修改的时间，文件的体积
+  Last modified 2020-10-19; size 1012 bytes
+
+# 字节码文件的MD5
+  MD5 checksum f696f0c66fbbcd6ed72829b6fbf05c2e
+
+# 字节码文件对应的源码文件
+public class Demo
+
+# JDK版本号:
+# | version | major version |
+# | 1.2     | 46            |
+# | 1.3     | 47            |
+# | 1.4     | 48            |
+# | 5       | 49            |
+# | 6       | 50            |
+# | 7       | 51            |
+# | 8       | 52            |
+# | 9       | 53            |
+# | 10      | 54            |
+# | 11      | 55            |
+
+# 运行此类的JDK最小版本号
+  minor version: 0
+
+# 运行此类的JDK主要版本号，52 对应JDK 8
+  major version: 52
+
+# ACC_PUBLIC 表示这是一个public的资源
+# ACC_SUPER 是JDK 1.1以后针对初始化调用语义变更以后的兼容符号，来区分是1.0.2的初始化方案还是1.1的初始化方案
+  flags: ACC_PUBLIC, ACC_SUPER
+
+# 常量池
+Constant pool:
+   #1 = Methodref          #17.#43        // java/lang/Object."<init>":()V
+   #2 = String             #44            // a
+   #3 = String             #45            // b
+   #4 = Class              #46            // java/lang/StringBuilder
+   #5 = Methodref          #4.#43         // java/lang/StringBuilder."<init>":()V
+   #6 = Methodref          #4.#47         // java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+   #7 = Methodref          #4.#48         // java/lang/StringBuilder.toString:()Ljava/lang/String;
+   #8 = Double             0.2d
+  #10 = Double             2.0d
+  #12 = Fieldref           #49.#50        // java/lang/System.out:Ljava/io/PrintStream;
+  #13 = String             #51            // if true
+  #14 = Methodref          #52.#53        // java/io/PrintStream.println:(Ljava/lang/String;)V
+  #15 = String             #54            // if false
+  #16 = Class              #55            // Demo
+  #17 = Class              #56            // java/lang/Object
+  #18 = Utf8               <init>
+  #19 = Utf8               ()V
+  #20 = Utf8               Code
+  #21 = Utf8               LocalVariableTable
+  #22 = Utf8               this
+  #23 = Utf8               LDemo;
+  #24 = Utf8               main
+  #25 = Utf8               ([Ljava/lang/String;)V
+  #26 = Utf8               i3
+  #27 = Utf8               I
+  #28 = Utf8               args
+  #29 = Utf8               [Ljava/lang/String;
+  #30 = Utf8               str1
+  #31 = Utf8               Ljava/lang/String;
+  #32 = Utf8               str2
+  #33 = Utf8               str3
+  #34 = Utf8               i1
+  #35 = Utf8               d1
+  #36 = Utf8               D
+  #37 = Utf8               d2
+  #38 = Utf8               i2
+  #39 = Utf8               i4
+  #40 = Utf8               StackMapTable
+  #41 = Class              #29            // "[Ljava/lang/String;"
+  #42 = Class              #57            // java/lang/String
+  #43 = NameAndType        #18:#19        // "<init>":()V
+  #44 = Utf8               a
+  #45 = Utf8               b
+  #46 = Utf8               java/lang/StringBuilder
+  #47 = NameAndType        #58:#59        // append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #48 = NameAndType        #60:#61        // toString:()Ljava/lang/String;
+  #49 = Class              #62            // java/lang/System
+  #50 = NameAndType        #63:#64        // out:Ljava/io/PrintStream;
+  #51 = Utf8               if true
+  #52 = Class              #65            // java/io/PrintStream
+  #53 = NameAndType        #66:#67        // println:(Ljava/lang/String;)V
+  #54 = Utf8               if false
+  #55 = Utf8               Demo
+  #56 = Utf8               java/lang/Object
+  #57 = Utf8               java/lang/String
+  #58 = Utf8               append
+  #59 = Utf8               (Ljava/lang/String;)Ljava/lang/StringBuilder;
+  #60 = Utf8               toString
+  #61 = Utf8               ()Ljava/lang/String;
+  #62 = Utf8               java/lang/System
+  #63 = Utf8               out
+  #64 = Utf8               Ljava/io/PrintStream;
+  #65 = Utf8               java/io/PrintStream
+  #66 = Utf8               println
+  #67 = Utf8               (Ljava/lang/String;)V
+{
+
+# 构造函数
+  public Demo();
+
+# 该构造方法没有传入的变量
+    descriptor: ()V
+
+# 该构造方法的访问属性是public
+    flags: ACC_PUBLIC
+
+# 构造方法的实现部分
+    Code:
+
+# 有一个参数（要初始化的对象），一个局部变量（要初始化的对象）和堆栈上最多一个对象（要初始化的对象）
+      stack=1, locals=1, args_size=1
+
+# load一个LocalVariableTable表里Slot=0的变量到栈里，(this)
+         0: aload_0
+
+# 调用初始化函数，函数对象是常量表的#1
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+
+# 函数结束
+         4: return
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+            0       5     0  this   LDemo;
+
+# main函数
+  public static void main(java.lang.String[]);
+
+# 入参是一个String[]
+    descriptor: ([Ljava/lang/String;)V
+
+# 访问属性是 public，static
+    flags: ACC_PUBLIC, ACC_STATIC
+
+# main函数的实现部分
+    Code:
+
+# 有1个参数（要初始化的对象），12个局部变量（要初始化的对象）和堆栈上最多4个对象（要初始化的对象）
+      stack=4, locals=12, args_size=1
+
+# 从常量池中将#2("a")提取到栈顶
+# 这个时候的栈如下
+# --------
+# ｜     |
+# ｜     |
+# ｜     |
+# ｜ "a" | -> 栈顶
+# --------
+         0: ldc           #2                  // String a
+# 栈顶的对象存入局部变量表slot=1(str1), 栈被清空
+# 局部变量表
+# | Slot｜ Name ｜ Val |
+# |  1  ｜ str1 ｜ "a" |
+         2: astore_1
+
+# 从常量池中将#3("b")提取到栈顶
+# 这个时候的栈如下
+# --------
+# ｜     |
+# ｜     |
+# ｜     |
+# ｜ "b" | -> 栈顶
+# --------
+         3: ldc           #3                  // String b
+
+# 栈顶的对象存入局部变量表slot=2(str2), 栈被清空
+# 局部变量表
+# | Slot｜ Name ｜ Val ｜
+# |  1  ｜ str1 ｜ "a" |
+# |  2  ｜ str2 ｜ "b" |
+         5: astore_2
+
+# new指令，参数为常量表#4(class java/lang/StringBuilder)，创建一个StringBuilder的实例
+# --------------------
+# ｜                 |
+# ｜                 |
+# ｜                 |
+# ｜ <StringBuilder> | -> 栈顶
+# --------------------
+         6: new           #4                  // class java/lang/StringBuilder
+
+# 把 <StringBuilder> 弹出后连续压入两次，这两个<StringBuilder>引用指向的是同一个实例
+# --------------------
+# ｜                 |
+# ｜                 |
+# ｜ <StringBuilder> |
+# ｜ <StringBuilder> | -> 栈顶
+# --------------------
+         9: dup
+
+# 弹出栈顶的<StringBuilder>供方法invokespecial调用其构造函数，这时栈里面只剩下了一个<StringBuilder>引用，并指向了一个已经被构造的实例
+# --------------------------
+# ｜                       |
+# ｜                       |
+# ｜                       |
+# ｜ <StringBuilder 已构造> | -> 栈顶
+# --------------------------
+        10: invokespecial #5                  // Method java/lang/StringBuilder."<init>":()V
+
+# 从局部变量表里加载Slot=1的变量的内容(str1)
+# --------------------------
+# ｜                       |
+# ｜                       |
+# ｜ <StringBuilder 已构造> |
+# ｜ "a"                   | -> 栈顶
+# --------------------------
+        13: aload_1
+
+
+# 依次弹出 "a", <StringBuilder>, "a" 作为 Method java/lang/StringBuilder.append的入参， <StringBuilder>作为执行对象
+# 执行完后， <StringBuilder> 实例对象已经包含了内容"a", 这个对象的引用作为返回值，压入栈顶
+# ---------------------------------
+# ｜                              |
+# ｜                              |
+# ｜ <StringBuilder 已构造, ["a"]> | -> 栈顶
+# ---------------------------------
+        14: invokevirtual #6                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+# 从局部变量表里加载Slot=2的变量的内容(str2)
+# ---------------------------------
+# ｜                              |
+# ｜                              |
+# ｜ <StringBuilder 已构造, ["a"]> |
+# ｜ "b"                          | -> 栈顶
+# ---------------------------------
+        17: aload_2
+
+# 依次弹出 "b", <StringBuilder>, "b" 作为 Method java/lang/StringBuilder.append的入参， <StringBuilder>作为执行对象
+# 执行完后， <StringBuilder> 实例对象已经包含了内容"ab", 这个对象的引用作为返回值，压入栈顶
+# --------------------------------------
+# ｜                                   |
+# ｜                                   |
+# ｜ <StringBuilder 已构造, ["ab"]>     | -> 栈顶
+# --------------------------------------
+        18: invokevirtual #6                  // Method java/lang/StringBuilder.append:(Ljava/lang/String;)Ljava/lang/StringBuilder;
+
+# 弹出 <StringBuilder>，调用 Method java/lang/StringBuilder.toString:()，得到返回值 "ab" 压入栈顶
+# --------------------------------------
+# ｜                                   |
+# ｜                                   |
+# ｜ "ab"                              | -> 栈顶
+# --------------------------------------
+        21: invokevirtual #7                  // Method java/lang/StringBuilder.toString:()Ljava/lang/String;
+
+# 栈顶的对象存入局部变量表slot=3(str3), 栈被清空
+# 局部变量表
+# | Slot｜ Name ｜ Val  |
+# |  1  ｜ str1 ｜ "a"  |
+# |  2  ｜ str2 ｜ "b"  |
+# |  3  ｜ str3 ｜ "ab" |
+        24: astore_3
+
+# 将常量 int 1 压入栈顶
+# 这个时候的栈如下
+# --------
+# ｜     |
+# ｜     |
+# ｜     |
+# ｜ 1   | -> 栈顶
+# --------
+        25: iconst_1
+
+# 栈顶的对象存入局部变量表slot=4(i1), 栈被清空
+# 局部变量表
+# | Slot｜ Name ｜ Val  |
+# |  1  ｜ str1 ｜ "a"  |
+# |  2  ｜ str2 ｜ "b"  |
+# |  3  ｜ str3 ｜ "ab" |
+# |  4  ｜ int  ｜ 1    |
+        26: istore        4
+
+# 从局部变量表中加载Slot=4(i1)的变量到到栈顶
+# 这个时候的栈如下
+# --------
+# ｜     |
+# ｜     |
+# ｜     |
+# ｜ 1   | -> 栈顶
+# --------
+        28: iload         4
+# 将常量 int 1 压入栈顶
+# 这个时候的栈如下
+# --------
+# ｜     |
+# ｜     |
+# ｜ 1   |
+# ｜ 1   | -> 栈顶
+# --------
+        30: iconst_1
+
+# 从栈里面Pop出两个int，相加(1+1)后压入栈顶
+# 这个时候的栈如下
+# --------
+# ｜     |
+# ｜     |
+# ｜     |
+# ｜ 2   | -> 栈顶
+# --------
+        31: iadd
+
+# 栈顶的对象存入局部变量表slot=4(i1), 栈被清空
+# 局部变量表
+# | Slot｜ Name ｜ Val  |
+# |  1  ｜ str1 ｜ "a"  |
+# |  2  ｜ str2 ｜ "b"  |
+# |  3  ｜ str3 ｜ "ab" |
+# |  4  ｜ i1   ｜ 2    |
+        32: istore        4
+
+# 从局部变量表中加载Slot=4(i1)的变量到到栈顶
+# 这个时候的栈如下
+# --------
+# ｜     |
+# ｜     |
+# ｜     |
+# ｜ 2   | -> 栈顶
+# --------
+        34: iload         4
+
+# 将常量 int 1 压入栈顶
+# 这个时候的栈如下
+# --------
+# ｜     |
+# ｜     |
+# ｜ 2   |
+# ｜ 1   | -> 栈顶
+# --------
+        36: iconst_1
+
+# 从栈里面Pop出两个int，相减(2-1)后压入栈顶
+# 这个时候的栈如下
+# --------
+# ｜     |
+# ｜     |
+# ｜     |
+# ｜ 1   | -> 栈顶
+# --------
+        37: isub
+
+# 栈顶的对象存入局部变量表slot=4(i1), 栈被清空
+# 局部变量表
+# | Slot｜ Name ｜ Val  |
+# |  1  ｜ str1 ｜ "a"  |
+# |  2  ｜ str2 ｜ "b"  |
+# |  3  ｜ str3 ｜ "ab" |
+# |  4  ｜ i1   ｜ 1    |
+        38: istore        4
+
+# 从局部变量表中加载Slot=4(i1)的变量到到栈顶
+# 这个时候的栈如下
+# --------
+# ｜     |
+# ｜     |
+# ｜     |
+# ｜ 1   | -> 栈顶
+# --------
+        40: iload         4
+
+# 将常量 int 2 压入栈顶
+# 这个时候的栈如下
+# --------
+# ｜     |
+# ｜     |
+# ｜ 1   |
+# ｜ 2   | -> 栈顶
+# --------
+        42: iconst_2
+
+# 从栈里面Pop出两个int，相乘(1*2)后压入栈顶
+# 这个时候的栈如下
+# --------
+# ｜     |
+# ｜     |
+# ｜     |
+# ｜ 2   | -> 栈顶
+# --------
+        43: imul
+
+# 栈顶的对象存入局部变量表slot=4(i1), 栈被清空
+# 局部变量表
+# | Slot｜ Name ｜ Val  |
+# |  1  ｜ str1 ｜ "a"  |
+# |  2  ｜ str2 ｜ "b"  |
+# |  3  ｜ str3 ｜ "ab" |
+# |  4  ｜ i1   ｜ 2    |
+        44: istore        4
+
+# 从局部变量表中加载Slot=4(i1)的变量到到栈顶
+# 这个时候的栈如下
+# --------
+# ｜     |
+# ｜     |
+# ｜     |
+# ｜ 2   | -> 栈顶
+# --------
+        46: iload         4
+
+# 将常量 int 2 压入栈顶
+# 这个时候的栈如下
+# --------
+# ｜     |
+# ｜     |
+# ｜ 2   |
+# ｜ 2   | -> 栈顶
+# --------
+        48: iconst_2
+
+# 从栈里面Pop出两个int，相除(2/2)后压入栈顶
+# 这个时候的栈如下
+# --------
+# ｜     |
+# ｜     |
+# ｜     |
+# ｜ 1   | -> 栈顶
+# --------
+        49: idiv
+
+# 栈顶的对象存入局部变量表slot=4(i1), 栈被清空
+# 局部变量表
+# | Slot｜ Name ｜ Val  |
+# |  1  ｜ str1 ｜ "a"  |
+# |  2  ｜ str2 ｜ "b"  |
+# |  3  ｜ str3 ｜ "ab" |
+# |  4  ｜ i1   ｜ 1    |
+        50: istore        4
+
+# 将常量池中的 #8 (double 0.2)加载到栈中
+# 这个时候的栈如下
+# --------
+# ｜     |
+# ｜     |
+# ｜     |
+# ｜0.2d | -> 栈顶
+# --------
+        52: ldc2_w        #8                  // double 0.2d
+
+# 栈顶的对象存入局部变量表slot=5(d1), 栈被清空
+# 局部变量表
+# | Slot｜ Name ｜ Val  |
+# |  1  ｜ str1 ｜ "a"  |
+# |  2  ｜ str2 ｜ "b"  |
+# |  3  ｜ str3 ｜ "ab" |
+# |  4  ｜ i1   ｜ 1    |
+# |  5  ｜ d1   ｜ 0.2d |
+        55: dstore        5
+
+# 从局部变量表中加载Slot=5(d1)的变量到到栈顶
+# 这个时候的栈如下
+# --------
+# ｜     |
+# ｜     |
+# ｜     |
+# ｜0.2d | -> 栈顶
+# --------
+        57: dload         5
+
+# 将常量 double 1.0 压入栈顶
+# 这个时候的栈如下
+# --------
+# ｜     |
+# ｜     |
+# ｜0.2d |
+# ｜1.0d | -> 栈顶
+# --------
+        59: dconst_1
+
+# 从栈里面Pop出两个double，相加(0.2d+1.0d)后压入栈顶
+# 这个时候的栈如下
+# --------
+# ｜     |
+# ｜     |
+# ｜     |
+# ｜1.2d | -> 栈顶
+# --------
+        60: dadd
+
+# 栈顶的对象存入局部变量表slot=5(d1), 栈被清空
+# 局部变量表
+# | Slot｜ Name ｜ Val  |
+# |  1  ｜ str1 ｜ "a"  |
+# |  2  ｜ str2 ｜ "b"  |
+# |  3  ｜ str3 ｜ "ab" |
+# |  4  ｜ i1   ｜ 1    |
+# |  5  ｜ d1   ｜ 1.2d |
+        61: dstore        5
+
+# 从局部变量表中加载Slot=5(d1)的变量到到栈顶
+# 这个时候的栈如下
+# --------
+# ｜     |
+# ｜     |
+# ｜     |
+# ｜1.2d | -> 栈顶
+# --------
+        63: dload         5
+
+# 将常量 double 1.0 压入栈顶
+# 这个时候的栈如下
+# --------
+# ｜     |
+# ｜     |
+# ｜1.2d |
+# ｜1.0d | -> 栈顶
+# --------
+        65: dconst_1
+
+# 从栈里面Pop出两个double，相减(1.2d+1.0d)后压入栈顶
+# 这个时候的栈如下
+# --------
+# ｜     |
+# ｜     |
+# ｜     |
+# ｜0.2d | -> 栈顶
+# --------
+        66: dsub
+
+# 栈顶的对象存入局部变量表slot=5(d1), 栈被清空
+# 局部变量表
+# | Slot｜ Name ｜ Val  |
+# |  1  ｜ str1 ｜ "a"  |
+# |  2  ｜ str2 ｜ "b"  |
+# |  3  ｜ str3 ｜ "ab" |
+# |  4  ｜ i1   ｜ 1    |
+# |  5  ｜ d1   ｜ 0.2d |
+        67: dstore        5
+
+# 从局部变量表中加载Slot=5(d1)的变量到到栈顶
+# 这个时候的栈如下
+# --------
+# ｜     |
+# ｜     |
+# ｜     |
+# ｜0.2d | -> 栈顶
+# --------
+        69: dload         5
+
+# 从常量池加载#10(2.0d)压入栈顶
+# 这个时候的栈如下
+# --------
+# ｜     |
+# ｜     |
+# ｜0.2d |
+# ｜2.0d | -> 栈顶
+# --------
+        71: ldc2_w        #10                 // double 2.0d
+
+# 从栈里面Pop出两个double，相乘(0.2d*2.0d)后压入栈顶
+# 这个时候的栈如下
+# --------
+# ｜     |
+# ｜     |
+# ｜     |
+# ｜0.4d | -> 栈顶
+# --------
+        74: dmul
+
+# 栈顶的对象存入局部变量表slot=5(d1), 栈被清空
+# 局部变量表
+# | Slot｜ Name ｜ Val  |
+# |  1  ｜ str1 ｜ "a"  |
+# |  2  ｜ str2 ｜ "b"  |
+# |  3  ｜ str3 ｜ "ab" |
+# |  4  ｜ i1   ｜ 1    |
+# |  5  ｜ d1   ｜ 0.4d |
+        75: dstore        5
+
+# 从局部变量表中加载Slot=5(d1)的变量到到栈顶
+# 这个时候的栈如下
+# --------
+# ｜     |
+# ｜     |
+# ｜     |
+# ｜0.4d | -> 栈顶
+# --------
+        77: dload         5
+
+# 从常量池加载#10(2.0d) 压入栈顶
+# 这个时候的栈如下
+# --------
+# ｜     |
+# ｜     |
+# ｜0.4d |
+# ｜2.0d | -> 栈顶
+# --------
+        79: ldc2_w        #10                 // double 2.0d
+
+# 从栈里面Pop出两个double，相除(0.4d/2.0d)后压入栈顶
+# 这个时候的栈如下
+# --------
+# ｜     |
+# ｜     |
+# ｜     |
+# ｜0.2d | -> 栈顶
+# --------
+        82: ddiv
+
+# 栈顶的对象存入局部变量表slot=5(d1), 栈被清空
+# 局部变量表
+# | Slot｜ Name ｜ Val  |
+# |  1  ｜ str1 ｜ "a"  |
+# |  2  ｜ str2 ｜ "b"  |
+# |  3  ｜ str3 ｜ "ab" |
+# |  4  ｜ i1   ｜ 1    |
+# |  5  ｜ d1   ｜ 0.2d |
+        83: dstore        5
+
+# 从常量池加载#8(0.2d) 压入栈顶
+# 这个时候的栈如下
+# --------
+# ｜     |
+# ｜     |
+# ｜     |
+# ｜0.2d | -> 栈顶
+# --------
+        85: ldc2_w        #8                  // double 0.2d
+
+# 栈顶的对象存入局部变量表slot=7(d2), 栈被清空
+# 局部变量表
+# | Slot｜ Name ｜ Val  |
+# |  1  ｜ str1 ｜ "a"  |
+# |  2  ｜ str2 ｜ "b"  |
+# |  3  ｜ str3 ｜ "ab" |
+# |  4  ｜ i1   ｜ 1    |
+# |  5  ｜ d1   ｜ 0.2d |
+# |  7  ｜ d2   ｜ 0.2d |
+        88: dstore        7
+
+# 将常量 int 2 压入栈顶
+# 这个时候的栈如下
+# --------
+# ｜     |
+# ｜     |
+# ｜     |
+# ｜ 2   | -> 栈顶
+# --------
+        90: iconst_2
+
+# 栈顶的对象存入局部变量表slot=9(i2), 栈被清空
+# 局部变量表
+# | Slot｜ Name ｜ Val  |
+# |  1  ｜ str1 ｜ "a"  |
+# |  2  ｜ str2 ｜ "b"  |
+# |  3  ｜ str3 ｜ "ab" |
+# |  4  ｜ i1   ｜ 1    |
+# |  5  ｜ d1   ｜ 0.2d |
+# |  7  ｜ d2   ｜ 0.2d |
+# |  9  ｜ i2   ｜ 2    |
+        91: istore        9
+
+# 从局部变量表中加载Slot=7(d2)的变量到到栈顶
+# 这个时候的栈如下
+# --------
+# ｜     |
+# ｜     |
+# ｜     |
+# ｜0.2d | -> 栈顶
+# --------
+        93: dload         7
+
+# 从局部变量表中加载Slot=9(i2)的变量到到栈顶
+# 这个时候的栈如下
+# --------
+# ｜     |
+# ｜     |
+# ｜0.2d |
+# ｜2    | -> 栈顶
+# --------
+        95: iload         9
+
+# 从栈中弹出一个int(2), 转换成double(2.0d), 压入栈顶
+# 这个时候的栈如下
+# --------
+# ｜     |
+# ｜     |
+# ｜0.2d |
+# ｜2.0d | -> 栈顶
+# --------
+        97: i2d
+
+# 从栈里面Pop出两个double，相加(0.2d+2.0d)后压入栈顶
+# 这个时候的栈如下
+# --------
+# ｜     |
+# ｜     |
+# ｜     |
+# ｜2.2d | -> 栈顶
+# --------
+        98: dadd
+
+# 栈顶的对象存入局部变量表slot=7(d2), 栈被清空
+# 局部变量表
+# | Slot｜ Name ｜ Val  |
+# |  1  ｜ str1 ｜ "a"  |
+# |  2  ｜ str2 ｜ "b"  |
+# |  3  ｜ str3 ｜ "ab" |
+# |  4  ｜ i1   ｜ 1    |
+# |  5  ｜ d1   ｜ 0.2d |
+# |  7  ｜ d2   ｜ 2.2d |
+# |  9  ｜ i2   ｜ 2    |
+        99: dstore        7
+
+# 将常量 int 0 压入栈顶
+# 这个时候的栈如下
+# --------
+# ｜     |
+# ｜     |
+# ｜     |
+# ｜ 0   | -> 栈顶
+# --------
+       101: iconst_0
+
+# 栈顶的对象存入局部变量表slot=10(i4), 栈被清空
+# 局部变量表
+# | Slot｜ Name ｜ Val  |
+# |  1  ｜ str1 ｜ "a"  |
+# |  2  ｜ str2 ｜ "b"  |
+# |  3  ｜ str3 ｜ "ab" |
+# |  4  ｜ i1   ｜ 1    |
+# |  5  ｜ d1   ｜ 0.2d |
+# |  7  ｜ d2   ｜ 2.2d |
+# |  9  ｜ i2   ｜ 2    |
+# | 10  ｜ i4   ｜ 0    |
+       102: istore        10
+
+# 将常量 int 0 压入栈顶
+# 这个时候的栈如下
+# --------
+# ｜     |
+# ｜     |
+# ｜     |
+# ｜ 0   | -> 栈顶
+# --------
+       104: iconst_0
+
+# 栈顶的对象存入局部变量表slot=11(i3), 栈被清空
+# 局部变量表
+# | Slot｜ Name ｜ Val  |
+# |  1  ｜ str1 ｜ "a"  |
+# |  2  ｜ str2 ｜ "b"  |
+# |  3  ｜ str3 ｜ "ab" |
+# |  4  ｜ i1   ｜ 1    |
+# |  5  ｜ d1   ｜ 0.2d |
+# |  7  ｜ d2   ｜ 2.2d |
+# |  9  ｜ i2   ｜ 2    |
+# | 10  ｜ i4   ｜ 0    |
+# | 11  ｜ i3   ｜ 0    |
+       105: istore        11
+
+# 从局部变量表中加载Slot=11(i3)的变量到到栈顶
+# 这个时候的栈如下
+# --------
+# ｜     |
+# ｜     |
+# ｜     |
+# ｜  0  | -> 栈顶
+# --------
+       107: iload         11
+
+# 将常量 int 10 压入栈顶，要压入的值为 -128~127 范围内时，用bipush指令
+# 这个时候的栈如下
+# --------
+# ｜     |
+# ｜     |
+# ｜  0  |
+# ｜ 10  | -> 栈顶
+# --------
+       109: bipush        10
+
+# 如果 变量i3的值 >= 10, 则跳转到 123 行指令来执行
+       111: if_icmpge     123
+
+# 修改局部变量Slot=10（i4）的值，增加1
+       114: iinc          10, 1
+
+# 修改局部变量Slot=11（i3）的值，增加1
+       117: iinc          11, 1
+
+# 循环返回到 107 行指令继续执行
+       120: goto          107
+
+# 从局部变量表中加载Slot=10(i4)的变量到到栈顶
+# 这个时候的栈如下
+# --------
+# ｜     |
+# ｜     |
+# ｜     |
+# ｜  10 | -> 栈顶
+# --------
+       123: iload         10
+
+# 将常量 int 5 压入栈顶
+# 这个时候的栈如下
+# --------
+# ｜     |
+# ｜     |
+# ｜ 10  |
+# ｜  5  | -> 栈顶
+# --------
+       125: iconst_5
+
+# 如果 变量i4的值 >= 5, 则跳转到 140 行指令来执行
+       126: if_icmpge     140
+
+# 获取静态方法： java/lang/System.out
+# 这个时候的栈如下
+# --------------------------
+# ｜                       |
+# ｜                       |
+# ｜                       |
+# ｜ <java/io/PrintStream> | -> 栈顶
+# --------------------------
+       129: getstatic     #12                 // Field java/lang/System.out:Ljava/io/PrintStream;
+
+# 将常量 #2 加载到栈顶
+# 这个时候的栈如下
+# --------------------------
+# ｜                       |
+# ｜                       |
+# ｜ <java/io/PrintStream> |
+# ｜       "true"          | -> 栈顶
+# --------------------------
+       132: ldc           #13                 // String if true
+
+# 弹出 "true" , <java/io/PrintStream>, 调用 <java/io/PrintStream> 的 java/io/PrintStream.println 函数，"true" 作为入参
+# 因为没有返回值， 栈是空的
+       134: invokevirtual #14                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+
+# 跳转到 148行指令
+       137: goto          148
+
+# 获取静态方法： java/lang/System.out
+# 这个时候的栈如下
+# --------------------------
+# ｜                       |
+# ｜                       |
+# ｜                       |
+# ｜ <java/io/PrintStream> | -> 栈顶
+# --------------------------
+       140: getstatic     #12                 // Field java/lang/System.out:Ljava/io/PrintStream;
+
+# 将常量 #15 加载到栈顶
+# 这个时候的栈如下
+# --------------------------
+# ｜                       |
+# ｜                       |
+# ｜ <java/io/PrintStream> |
+# ｜       "false"         | -> 栈顶
+# --------------------------
+       143: ldc           #15                 // String if false
+
+# 弹出 "false" , <java/io/PrintStream>, 调用 <java/io/PrintStream> 的 java/io/PrintStream.println 函数，"false" 作为入参
+# 因为没有返回值， 栈是空的
+       145: invokevirtual #14                 // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+
+# 运行结束
+       148: return
+
+# 局部变量列表
+      LocalVariableTable:
+        Start  Length  Slot  Name   Signature
+          107      16    11    i3   I
+            0     149     0  args   [Ljava/lang/String;
+            3     146     1  str1   Ljava/lang/String;
+            6     143     2  str2   Ljava/lang/String;
+           25     124     3  str3   Ljava/lang/String;
+           28     121     4    i1   I
+           57      92     5    d1   D
+           90      59     7    d2   D
+           93      56     9    i2   I
+          104      45    10    i4   I
+
+# 栈图，JDK7 开始作为字节码中的强制含有内容
+# 大体来说，一个代码分支就有一个StackMapFrame与之对应。StackMapFrame描述了当前栈的状态以及局部变量表的状态。这个状态的描述可能是完全描述“full_frame”，也可以是“增加了谁”，“减少了几个”这样的描述。这个状态包括了栈内每个位置的类型，与局部变量表每个位置的类型
+      StackMapTable: number_of_entries = 4
+        frame_type = 255 /* full_frame */
+          offset_delta = 107
+          locals = [ class "[Ljava/lang/String;", class java/lang/String, class java/lang/String, class java/lang/String, int, double, double, int, int, int ]
+          stack = []
+        frame_type = 250 /* chop */
+          offset_delta = 15
+        frame_type = 16 /* same */
+        frame_type = 7 /* same */
+}
